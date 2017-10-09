@@ -21,7 +21,8 @@ public class StringsAndListsController
 		Kahoot myFirstKahoot = new Kahoot();				//Creates a Kahoot with default values
 		myKahoots.add(myFirstKahoot);
 		fillTheList();
-		showTheList();
+//		showTheList();
+		changeTheList();
 	}
 	
 	private void showTheList()
@@ -70,5 +71,13 @@ public class StringsAndListsController
 		myKahoots.add(bigQuiz);
 		myKahoots.add(animalColor);
 		myKahoots.add(presidents);
+	}
+	
+	private void changeTheList()
+	{
+		popup.displayText("The current list size is: " + myKahoots.size());
+		Kahoot removed = myKahoots.remove(3);
+		popup.displayText("I removed the kahoot by " + removed.getCreator());
+		popup.displayText("The list now has: " + myKahoots.size() + " items inside." );
 	}
 }
