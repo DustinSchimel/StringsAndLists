@@ -22,7 +22,8 @@ public class StringsAndListsController
 		myKahoots.add(myFirstKahoot);
 		fillTheList();
 //		showTheList();
-		changeTheList();
+//		changeTheList();
+		practiceWithList();
 	}
 	
 	private void showTheList()
@@ -79,5 +80,16 @@ public class StringsAndListsController
 		Kahoot removed = myKahoots.remove(3);
 		popup.displayText("I removed the kahoot by " + removed.getCreator());
 		popup.displayText("The list now has: " + myKahoots.size() + " items inside." );
+		myKahoots.add(0, removed);
+		
+		popup.displayText("The list is still : " + myKahoots.size() + " items big.");
+		removed = myKahoots.set(2, new Kahoot());
+		popup.displayText("The Kahoot by " + removed.getCreator() + " was replaced with one by: " + myKahoots.get(2).getCreator());
+	}
+	
+	private void practiceWithList()
+	{
+		String response = popup.getResponse("I'm going to add a list with pre-added values, who would you like the list to be made by?");
+		myKahoots.add(0, new Kahoot(response, 10, "Default Topic"));
 	}
 }
