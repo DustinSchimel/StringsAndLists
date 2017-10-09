@@ -102,6 +102,17 @@ public class Controller
 		myKahoots.add(6, removed);
 		popup.displayText("There are now " + myKahoots.size() + " Kahoots in the list");
 		
+		
+		int count = 0;
+		
+		for (Kahoot kahoot : myKahoots)
+		{
+			count++;
+			popup.displayText("The #" + count + " item in the list is created by " + kahoot.getCreator() + 
+							", the question count is " + kahoot.getQuestionCount() + " and the topic is '" + kahoot.getTopic() + "'.");
+		}
+		
+		
 		//Need to add loops
 		
 	}
