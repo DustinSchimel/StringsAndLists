@@ -113,7 +113,9 @@ public class Controller
 		}
 		
 		
-		//Need to add loops
+		for (loop = 0; loop < )
+		
+		//Need to add backwards loop
 		
 	}
 	
