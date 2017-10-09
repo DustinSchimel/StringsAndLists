@@ -91,5 +91,7 @@ public class StringsAndListsController
 	{
 		String response = popup.getResponse("I'm going to add a list with pre-added values, who would you like the list to be made by?");
 		myKahoots.add(0, new Kahoot(response, 10, "Default Topic"));
+		popup.displayText("Your Kahoot was added to the first position with these values.  Creator:" + myKahoots.get(0).getCreator() 
+							+ "| Question Count: " + myKahoots.get(0).getQuestionCount() + " | Topic: " + myKahoots.get(0).getTopic());
 	}
 }

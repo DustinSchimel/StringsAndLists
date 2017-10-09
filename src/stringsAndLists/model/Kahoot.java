@@ -37,6 +37,11 @@ public class Kahoot
 		return creator;
 	}
 	
+	public int getQuestionCount()
+	{
+		return questionCount;
+	}
+	
 	public String getTopic()
 	{
 		return topic;
