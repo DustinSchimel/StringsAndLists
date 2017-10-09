@@ -5,12 +5,12 @@ import java.util.ArrayList;
 import stringsAndLists.model.Kahoot;
 import stringsAndLists.view.StringsAndListsDisplay;
 
-public class StringsAndListsController
+public class Controller
 {
 	private List<Kahoot> myKahoots;
 	private StringsAndListsDisplay popup;
 	
-	public StringsAndListsController()
+	public Controller()
 	{
 		myKahoots = new ArrayList<Kahoot>();
 		popup = new StringsAndListsDisplay();
@@ -102,8 +102,17 @@ public class StringsAndListsController
 		myKahoots.add(6, removed);
 		popup.displayText("There are now " + myKahoots.size() + " Kahoots in the list");
 		
+		//Need to add loops
 		
-		
-		
+	}
+	
+	public StringsAndListsDisplay getPopup()
+	{
+		return popup;
+	}
+	
+	public ArrayList<Kahoot> getMyKahoots()
+	{
+		return (ArrayList<Kahoot>) myKahoots;
 	}
 }

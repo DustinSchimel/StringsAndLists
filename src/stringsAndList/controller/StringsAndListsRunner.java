@@ -4,7 +4,7 @@ public class StringsAndListsRunner
 {
 	public static void main (String [] args)
 	{
-		StringsAndListsController app = new StringsAndListsController();
+		Controller app = new Controller();
 		app.start();
 	}
 }
