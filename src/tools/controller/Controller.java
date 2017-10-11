@@ -114,7 +114,7 @@ public class Controller
 		}
 		
 		
-		for (int loop = 6; loop > -1; loop--)
+		for (int loop = myKahoots.size() - 1; loop > -1; loop--)
 		{
 			popup.displayText("The #" + (loop + 1) + " item in the lists is created by " + myKahoots.get(loop).getCreator() + 
 							", the question count is " + myKahoots.get(loop).getQuestionCount() + " and the topic is '" + myKahoots.get(loop).getTopic() + "'.");
