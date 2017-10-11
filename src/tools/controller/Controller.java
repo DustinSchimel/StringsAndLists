@@ -129,4 +129,32 @@ public class Controller
 	{
 		return (ArrayList<Kahoot>) myKahoots;
 	}
+	
+	public int findMaxLength(ArrayList<String> myList)
+	{
+		int max = 0;
+		
+		for (int index = 0; index < myList.size(); index++)
+		{
+			if (myList.get(index).length() > max)
+			{
+				max = myList.get(index).length();
+			}
+		}
+		return max;
+	}
+	
+	public int findMinLength(ArrayList<String> myList)
+	{
+		int min = Integer.MAX_VALUE;
+		
+		for (int index = 0; index < myList.size(); index++)
+		{
+			if (myList.get(index).length() < min)
+			{
+				min = myList.get(index).length();
+			}
+		}
+		return min;
+	}
 }
