@@ -1,4 +1,4 @@
-package stringsAndLists.view;
+package tools.view;
 
 import javax.swing.JOptionPane;
 
@@ -7,7 +7,7 @@ import javax.swing.JOptionPane;
  * @author Dustin Schimel
  * @version 1.0 03.10.2017
  */
-public class StringsAndListsDisplay
+public class PopupDisplay
 {
 	/**
 	 * Displays a popup showing a supplied String to the user.

@@ -1,19 +1,20 @@
-package stringsAndList.controller;
+package tools.controller;
 
 import java.util.List;
 import java.util.ArrayList;
-import stringsAndLists.model.Kahoot;
-import stringsAndLists.view.StringsAndListsDisplay;
+
+import tools.model.Kahoot;
+import tools.view.PopupDisplay;
 
 public class Controller
 {
 	private List<Kahoot> myKahoots;
-	private StringsAndListsDisplay popup;
+	private PopupDisplay popup;
 	
 	public Controller()
 	{
 		myKahoots = new ArrayList<Kahoot>();
-		popup = new StringsAndListsDisplay();
+		popup = new PopupDisplay();
 	}
 	
 	public void start()
@@ -113,13 +114,13 @@ public class Controller
 		}
 		
 		
-		for (loop = 0; loop < )
+		//for (loop = 0; loop < )
 		
 		//Need to add backwards loop
 		
 	}
 	
-	public StringsAndListsDisplay getPopup()
+	public PopupDisplay getPopup()
 	{
 		return popup;
 	}

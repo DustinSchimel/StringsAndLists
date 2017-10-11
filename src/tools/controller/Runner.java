@@ -1,6 +1,6 @@
-package stringsAndList.controller;
+package tools.controller;
 
-public class StringsAndListsRunner
+public class Runner
 {
 	public static void main (String [] args)
 	{
