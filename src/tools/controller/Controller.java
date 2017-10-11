@@ -93,7 +93,7 @@ public class Controller
 		String response = popup.getResponse("I'm going to add a list with pre-added values, who would you like the list to be made by?");
 		myKahoots.add(0, new Kahoot(response, 10, "Default Topic"));
 		popup.displayText("Your Kahoot was added to the first position with these values.  Creator: " + myKahoots.get(0).getCreator() 
-							+ "| Question Count: " + myKahoots.get(0).getQuestionCount() + " | Topic: " + myKahoots.get(0).getTopic());
+							+ " | Question Count: " + myKahoots.get(0).getQuestionCount() + " | Topic: " + myKahoots.get(0).getTopic());
 		
 		popup.displayText("I will be removing the 5th Kahoot in the list.");
 		Kahoot removed = myKahoots.remove(5);
@@ -114,10 +114,12 @@ public class Controller
 		}
 		
 		
-		//for (loop = 0; loop < )
-		
-		//Need to add backwards loop
-		
+		for (int loop = 6; loop > -1; loop--)
+		{
+			popup.displayText("The #" + (loop + 1) + " item in the lists is created by " + myKahoots.get(loop).getCreator() + 
+							", the question count is " + myKahoots.get(loop).getQuestionCount() + " and the topic is '" + myKahoots.get(loop).getTopic() + "'.");
+			
+		}
 	}
 	
 	public PopupDisplay getPopup()
